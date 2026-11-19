@@ -1,336 +1,90 @@
-```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Altus & Co Consulting | Strategic Marketing & Digital Solutions</title>
-
-<meta name="description" content="Altus & Co Consulting provides website development, digital marketing, social media management, and business consulting services.">
-
-<link rel="icon" href="favicon.ico">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:'Inter',sans-serif;
-    background:linear-gradient(to bottom,#000,#111);
-    color:#fff;
-    line-height:1.6;
-}
-
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-}
-
-nav{
-    position:fixed;
-    width:100%;
-    top:0;
-    background:rgba(0,0,0,.95);
-    border-bottom:1px solid #222;
-    z-index:1000;
-}
-
-.nav-container{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 0;
-}
-
-.logo-text{
-    font-weight:700;
-    letter-spacing:3px;
-}
-
-.nav-links{
-    display:flex;
-    gap:30px;
-}
-
-.nav-links a{
-    color:white;
-    text-decoration:none;
-}
-
-.hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding-top:120px;
-}
-
-.hero img{
-    width:180px;
-    margin-bottom:25px;
-}
-
-.hero h1{
-    font-size:4rem;
-    margin-bottom:20px;
-}
-
-.hero p{
-    max-width:750px;
-    margin:auto;
-    color:#cfcfcf;
-}
-
-.buttons{
-    margin-top:35px;
-}
-
-.btn{
-    display:inline-block;
-    padding:14px 28px;
-    margin:10px;
-    border-radius:6px;
-    text-decoration:none;
-    font-weight:600;
-}
-
-.btn-primary{
-    background:white;
-    color:black;
-}
-
-.btn-secondary{
-    border:1px solid white;
-    color:white;
-}
-
-section{
-    padding:100px 0;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:60px;
-    font-size:2.5rem;
-}
-
-.services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:#0d0d0d;
-    border:1px solid #222;
-    padding:35px;
-    border-radius:12px;
-}
-
-.card h3{
-    margin-bottom:15px;
-}
-
-.card p{
-    color:#cfcfcf;
-}
-
-.about{
-    max-width:800px;
-    margin:auto;
-    text-align:center;
-}
-
-.about p{
-    color:#cfcfcf;
-}
-
-.contact{
-    text-align:center;
-}
-
-footer{
-    border-top:1px solid #222;
-    padding:40px 0;
-    text-align:center;
-    color:#999;
-}
-
-footer a{
-    color:#999;
-    text-decoration:none;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-    font-size:2.5rem;
-}
-
-.nav-links{
-    gap:15px;
-    font-size:.9rem;
-}
-
-}
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Altus &amp; Co Consulting | Websites &amp; Marketing in Atlanta</title>
+    <meta name="description" content="Altus &amp; Co helps service businesses build better websites and keep their marketing moving with project-based work and ongoing support. Based in Atlanta.">
+    <link rel="canonical" href="https://altusandco.com/">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-<nav>
-    <div class="container nav-container">
-        <div class="logo-text">ALTUS & CO</div>
-
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </div>
-</nav>
-
-<section class="hero" id="home">
-    <div class="container">
-
-        <img src="logo.png" alt="Altus & Co Logo">
-
-        <h1>
-            Strategic Marketing & Digital Solutions
-            for Modern Businesses
-        </h1>
-
-        <p>
-            Altus & Co Consulting partners with businesses and firms to
-            strengthen their digital presence through professional websites,
-            digital marketing, social media management, and business consulting.
-        </p>
-
-        <div class="buttons">
-            <a href="mailto:info@altusandco.com" class="btn btn-primary">
-                Contact Us
-            </a>
-
-            <a href="#services" class="btn btn-secondary">
-                Our Services
-            </a>
-        </div>
-
-        <p style="margin-top:25px;">
-            www.altusandco.com
-        </p>
-
-    </div>
-</section>
-
-<section id="services">
-    <div class="container">
-
-        <h2 class="section-title">Our Services</h2>
-
-        <div class="services">
-
-            <div class="card">
-                <h3>Website Development</h3>
-                <p>
-                    Professional websites designed to build credibility,
-                    generate leads, and support long-term growth.
-                </p>
+    <header class="site-header">
+        <nav class="wrap nav" aria-label="Main navigation">
+            <a class="wordmark" href="#home">ALTUS &amp; CO</a>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </div>
+        </nav>
+    </header>
 
-            <div class="card">
-                <h3>Digital Marketing</h3>
-                <p>
-                    Marketing strategies focused on increasing visibility,
-                    lead generation, and brand growth.
-                </p>
+    <main id="home">
+        <section class="hero wrap" aria-labelledby="hero-title">
+            <div>
+                <p class="eyebrow">Atlanta · Serving clients nationwide</p>
+                <h1 id="hero-title">Websites and marketing for service businesses.</h1>
+                <p class="intro">Help customers understand what you offer and make it easy for them to reach you. Altus &amp; Co builds websites and provides ongoing marketing support for small teams.</p>
+                <div class="actions">
+                    <a class="button primary" href="#contact">Start a conversation</a>
+                    <a class="button secondary" href="#services">Explore services</a>
+                </div>
             </div>
+            <img class="hero-logo" src="logo.png" width="801" height="800" alt="Altus &amp; Co Consulting">
+        </section>
 
-            <div class="card">
-                <h3>Social Media Management</h3>
-                <p>
-                    Consistent content and audience engagement that
-                    strengthens your online presence.
-                </p>
+        <section class="light" id="services" aria-labelledby="services-title">
+            <div class="wrap section-content">
+                <h2 id="services-title">Where we can help</h2>
+                <div class="cards">
+                    <article>
+                        <h3>Website design &amp; updates</h3>
+                        <p>Launch a mobile-friendly site or refresh the one you have. Give customers a clear view of your services and a straightforward way to inquire.</p>
+                    </article>
+                    <article>
+                        <h3>Marketing &amp; social media</h3>
+                        <p>Build a content plan around the services you want to promote, with support for messaging, social posts, and scheduling.</p>
+                    </article>
+                    <article>
+                        <h3>Ongoing digital support</h3>
+                        <p>Keep your site current and your marketing consistent with an agreed monthly scope for updates, content, and check-ins.</p>
+                    </article>
+                </div>
             </div>
+        </section>
 
-        </div>
+        <section id="about" class="wrap section-content split" aria-labelledby="about-title">
+            <div>
+                <p class="eyebrow">About Altus &amp; Co</p>
+                <h2 id="about-title">Start with one priority.</h2>
+                <p>Altus &amp; Co is an Atlanta-based digital consulting business. We work with service businesses that want help with a defined project or a partner to handle recurring website and marketing work.</p>
+            </div>
+            <ol class="process">
+                <li><strong>Talk through the goal.</strong> Tell us what you offer and what you want customers to do next.</li>
+                <li><strong>Agree on the scope.</strong> We’ll outline the deliverables and timeline before work begins.</li>
+                <li><strong>Plan what comes next.</strong> After the project, we can discuss ongoing support based on what you need.</li>
+            </ol>
+        </section>
 
-    </div>
-</section>
+        <section id="contact" class="light" aria-labelledby="contact-title">
+            <div class="wrap section-content split">
+                <div>
+                    <h2 id="contact-title">Tell us what you’re working on.</h2>
+                    <p>Share your business name, your website or social profile if you have one, and the first thing you’d like help with.</p>
+                </div>
+                <div class="contact-action">
+                    <a class="button primary" href="mailto:info@altusandco.com?subject=Altus%20%26%20Co%20project%20inquiry&amp;body=Hi%20Altus%20%26%20Co%2C%0D%0A%0D%0ABusiness%20name%3A%20%0D%0AWebsite%20or%20social%20profile%3A%20%0D%0AWhat%20I%27d%20like%20help%20with%3A%20%0D%0A">Email us about your project</a>
+                    <a href="mailto:info@altusandco.com">info@altusandco.com</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<section id="about">
-    <div class="container">
-
-        <h2 class="section-title">About Altus & Co</h2>
-
-        <div class="about">
-
-            <p>
-                The name Altus comes from the Latin word meaning
-                "elevated" or "high." That principle guides everything
-                we do.
-            </p>
-
-            <br>
-
-            <p>
-                We help businesses elevate their digital presence through
-                strategic marketing, professional website development,
-                and modern business solutions designed for growth.
-            </p>
-
-        </div>
-
-    </div>
-</section>
-
-<section id="contact">
-    <div class="container contact">
-
-        <h2 class="section-title">Contact Us</h2>
-
-        <p>
-            Ready to elevate your business?
-        </p>
-
-        <br>
-
-        <a href="mailto:info@altusandco.com" class="btn btn-primary">
-            info@altusandco.com
-        </a>
-
-    </div>
-</section>
-
-<footer>
-
-    <strong>Altus & Co Consulting</strong>
-
-    <br><br>
-
-    Atlanta, Georgia • Serving Clients Nationwide
-
-    <br><br>
-
-    © 2025 Altus & Co Consulting. All Rights Reserved.
-
-</footer>
-
+    <footer class="wrap footer">
+        <strong>Altus &amp; Co Consulting</strong>
+        <span>Atlanta, Georgia</span>
+    </footer>
 </body>
 </html>
-```
-
