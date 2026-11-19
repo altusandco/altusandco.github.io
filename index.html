@@ -7,8 +7,9 @@
     <meta name="description" content="Altus &amp; Co helps service businesses build websites and grow on social media. Photography packages are available for Atlanta-area businesses.">
     <link rel="canonical" href="https://altusandco.com/">
     <link rel="icon" href="logo.png" type="image/png">
-    <link rel="stylesheet" href="styles.css?v=studio-1">
+    <link rel="stylesheet" href="styles.css?v=inquiry-1">
     <script src="reveal.js" defer></script>
+    <script src="inquiry.js" defer></script>
 </head>
 <body>
     <header class="site-header">
@@ -16,7 +17,6 @@
             <a class="wordmark" href="#home">ALTUS &amp; CO</a>
             <div class="nav-links">
                 <a href="#services">Services</a>
-                <a href="#photography">Photography</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
             </div>
@@ -46,33 +46,28 @@
                     <article data-reveal>
                         <h3>Website design &amp; updates</h3>
                         <p>Launch a mobile-friendly site or refresh the one you have. Give customers a clear view of your services and a straightforward way to inquire.</p>
+                        <a class="service-link" href="#contact" data-service="Website design &amp; updates" aria-label="Inquire about Website design &amp; updates">Inquire about this service <span aria-hidden="true">↗</span></a>
                     </article>
                     <article data-reveal>
                         <h3>Social media growth &amp; development</h3>
                         <p>Refine your profiles, build a content plan, and set a posting schedule. Review reach, engagement, and follower trends to see what to build on.</p>
+                        <a class="service-link" href="#contact" data-service="Social media growth &amp; development" aria-label="Inquire about Social media growth &amp; development">Inquire about this service <span aria-hidden="true">↗</span></a>
                     </article>
                     <article data-reveal>
                         <h3>Digital marketing strategy</h3>
                         <p>Clarify your messaging and plan how to promote the services you want to sell. Identify where prospects can learn more and how they can get in touch.</p>
+                        <a class="service-link" href="#contact" data-service="Digital marketing strategy" aria-label="Inquire about Digital marketing strategy">Inquire about this service <span aria-hidden="true">↗</span></a>
                     </article>
                     <article data-reveal>
                         <h3>Ongoing digital support</h3>
                         <p>Keep your site current and your marketing consistent with an agreed monthly scope for updates, content, and check-ins.</p>
+                        <a class="service-link" href="#contact" data-service="Ongoing digital support" aria-label="Inquire about Ongoing digital support">Inquire about this service <span aria-hidden="true">↗</span></a>
                     </article>
                 </div>
-            </div>
-        </section>
-
-        <section class="photography" id="photography" aria-labelledby="photography-title">
-            <div class="wrap section-content split" data-reveal>
-                <div>
-                    <p class="eyebrow">Atlanta area</p>
-                    <h2 id="photography-title">Photography for your business.</h2>
-                    <p>Book a photography package for professional headshots, brand images for your website, or fresh content for your social channels.</p>
-                </div>
-                <div class="contact-action">
-                    <a class="button primary" href="mailto:info@altusandco.com?subject=Atlanta%20photography%20package%20inquiry&amp;body=Hi%20Altus%20%26%20Co%2C%0D%0A%0D%0ABusiness%20name%3A%20%0D%0AShoot%20location%3A%20%0D%0APreferred%20date%20or%20timeframe%3A%20%0D%0AWhat%20I%27d%20like%20photographed%3A%20%0D%0A">Ask about photography packages</a>
-                </div>
+                <aside class="photography-note" id="photography">
+                    <p><strong>In the Atlanta area?</strong> Ask about photography packages for headshots, brand images, and social content.</p>
+                    <a href="#contact" data-service="Atlanta photography">Ask about photography <span aria-hidden="true">↗</span></a>
+                </aside>
             </div>
         </section>
 
@@ -90,15 +85,33 @@
         </section>
 
         <section id="contact" class="light" aria-labelledby="contact-title">
-            <div class="wrap section-content split" data-reveal>
+            <div class="wrap section-content split inquiry">
                 <div>
                     <h2 id="contact-title">Tell us what you’re working on.</h2>
-                    <p>Share your business name, your website or social profile if you have one, and the first thing you’d like help with.</p>
+                    <p>Share a little about your business and what you’d like help with.</p>
+                    <p>Prefer email? <a href="mailto:info@altusandco.com">info@altusandco.com</a></p>
                 </div>
-                <div class="contact-action">
-                    <a class="button primary" href="mailto:info@altusandco.com?subject=Altus%20%26%20Co%20project%20inquiry&amp;body=Hi%20Altus%20%26%20Co%2C%0D%0A%0D%0ABusiness%20name%3A%20%0D%0AWebsite%20or%20social%20profile%3A%20%0D%0AWhat%20I%27d%20like%20help%20with%3A%20%0D%0A">Email us about your project</a>
-                    <a href="mailto:info@altusandco.com">info@altusandco.com</a>
-                </div>
+                <form class="inquiry-form" hidden>
+                    <div class="inquiry-fields">
+                        <label>Your name <input name="name" autocomplete="name" maxlength="120" required></label>
+                        <label>Email <input type="email" name="email" autocomplete="email" maxlength="254" required></label>
+                        <label>Business name <span>(optional)</span> <input name="business" autocomplete="organization" maxlength="160"></label>
+                        <label>Service
+                            <select name="service" id="inquiry-service" required>
+                                <option value="">Select a service</option>
+                                <option>Website design &amp; updates</option>
+                                <option>Social media growth &amp; development</option>
+                                <option>Digital marketing strategy</option>
+                                <option>Ongoing digital support</option>
+                                <option>Atlanta photography</option>
+                                <option>Several services or unsure</option>
+                            </select>
+                        </label>
+                    </div>
+                    <label>Project details <textarea name="message" rows="5" maxlength="3000" required></textarea></label>
+                    <button class="button primary" type="submit">Open email draft</button>
+                    <p class="inquiry-hint">Review and send your inquiry from your email app.</p>
+                </form>
             </div>
         </section>
     </main>
